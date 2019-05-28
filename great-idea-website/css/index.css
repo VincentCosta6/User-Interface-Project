@@ -1,0 +1,182 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	width: 876px;
+	margin: 0 auto;
+	background-color: lightcyan
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+header {
+	height: 50px;
+	position: sticky;
+	top: 0;
+	z-index:100;
+	background-color: white;
+}
+
+header nav {
+	width: 876px;
+}
+
+header nav img {
+
+}
+
+header nav a {
+	text-decoration: none;
+	color: grey;
+	transition: all .6s;
+	padding: 18px 30px 10px 30px;
+}
+
+header nav a:hover {
+	background-color: rgba(0, 0, 0);
+	color: white;
+	border-radius: 15px;
+}
+
+.seperator {
+	border-bottom: 1px solid black;
+	padding-bottom: 50px;
+}
+
+button {
+	border: 1px solid black;
+	background-color: white;
+	font-size: 20px;
+	padding: 5px 40px;
+	margin: 0 auto;
+	display: block;
+	
+	transition: all .7s;
+}
+
+button:hover {
+	border-radius: 30px;
+	background-color: black;
+	color: white;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+.title {
+	border-bottom: 1px solid black;
+	height: 379px;
+	padding-bottom: 430px;
+}
+
+.title img {
+	float: right
+}
+
+aside {
+	display: inline-block;
+	margin-left: 100px;
+	margin-top: 90px;
+}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.content {
+	margin: 50px 0px;
+	width: 876px;
+}
+
+.content section {
+	display: inline-block;
+	margin: 0px 15px;
+}
+
+.content section p {
+	word-break: break-word;
+	width: calc(876px / 2 - 15px * 3);/* Width / numberOfSections - margin * 3 */
+}
+
+.content.s3 section p {
+	width: calc(876px / 3 - 15px * 3); /* Width / numberOfSections - margin * 3 */
+}
+
+.code {
+	margin: 0 auto;
+}
+
+.contact p {
+	
+}
+
+.contact p.number {
+	margin: 10px 0px;
+}
+
+footer p {
+	text-align: center;
+	margin: 30px;
+}
